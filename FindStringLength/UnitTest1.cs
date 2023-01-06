@@ -6,7 +6,7 @@ namespace FindStringLength
         [Fact]
         public void checkLength()
         {
-            LearnHelper lh = new LearnHelper();
+            LengthHelper lh = new LengthHelper();
             string example = "Test String";
             Assert.Equal(example.Length,lh.findLength(example));
         }

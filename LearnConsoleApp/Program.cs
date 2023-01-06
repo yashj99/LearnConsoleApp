@@ -8,14 +8,14 @@ namespace LearnConsoleApp
         {
             Console.WriteLine(" ##### Get String Length ##### ");
             Console.WriteLine("Please enter a string : ");
-            LearnHelper lh = new LearnHelper();
+            LengthHelper lh = new LengthHelper();
             string enteredString = Console.ReadLine();
             Console.WriteLine("Length of " + enteredString + " is  : " + lh.findLength(enteredString));
 
             Console.ReadKey();
         }
     }
-    public class LearnHelper
+    public class LengthHelper
     {
         public int findLength(string s)
         {
