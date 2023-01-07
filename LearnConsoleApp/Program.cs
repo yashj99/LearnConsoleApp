@@ -19,6 +19,7 @@ namespace LearnConsoleApp
     {
         public int findLength(string s)
         {
+            if (s == null || s.Length == 0) { return 0; }
             return s.Trim().Length;
         }
     }
