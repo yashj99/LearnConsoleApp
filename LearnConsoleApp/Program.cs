@@ -19,8 +19,12 @@ namespace LearnConsoleApp
     {
         public int findLength(string s)
         {
-            if (s == null || s.Length == 0) { return 0; }
-            return s.Trim().Length;
+            if (s == null){
+                throw new ArgumentException("string passed cannot be null");
+            }
+            return s.Length;
+            
+            //return String.IsNullOrEmpty(s) ? 0 : s.Length;
         }
     }
 }
